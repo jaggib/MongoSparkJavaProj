@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.eva</groupId>
+	<artifactId>mongodb_java_conn</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mongodb_java_conn</name>
+	<description>mongodb_java_conn</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.4.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.10</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql_2.10 -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-sql_2.10</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		
+
+    <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-hive_2.10</artifactId>
+        <version>2.1.0</version>
+    </dependency>
+    
+
+		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-catalyst_2.10 -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-catalyst_2.10</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.parquet/parquet-hadoop -->
+<dependency>
+    <groupId>org.apache.parquet</groupId>
+    <artifactId>parquet-hadoop</artifactId>
+    <version>1.8.1</version>
+</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector_2.10 -->
+		<!-- https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector_2.10 -->
+		<dependency>
+			<groupId>org.mongodb.spark</groupId>
+			<artifactId>mongo-spark-connector_2.10</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+
+
+
+
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>
